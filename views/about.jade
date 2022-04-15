@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+
+
+    .collapse.navbar-collapse#navbarNav 
+      ul.navbar-nav 
+        li.nav-item.active 
+          a.nav-link(href="/") Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href="/about") About
+
+  <!-- Page Content -->
+
+  .container 
+    .row 
+      .col-lg-12.text-center.main.mt-5 
+        h1.mt5= title 
+        p.mt3 Created by Kevin Muriuki
